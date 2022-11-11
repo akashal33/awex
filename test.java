@@ -2,6 +2,10 @@ class test{
 
  public void m1(){
  
+	// bug fix in process
+	// git stash
+	//git stash apply
+	// bug fix after m2 
  
  }
   
