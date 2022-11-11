@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 
+	<bean id="receiver" class="com.awe.beans.Receiver" p:frequancy="33.3" p:receiverType="FM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="byName" p:radioName="ABC" p:range="999"/>
+ -->
+ 
+ 	<!--  
+	<bean id="receiver" class="com.awe.beans.Receiver" p:frequancy="33.3" p:receiverType="FM"/>
+	<bean id="receiver2" class="com.awe.beans.Receiver"  p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="byType" p:radioName="ABC" p:range="999"/>
+	-->
+	
+	<!--  
+	<bean id="receiver1" class="com.awe.beans.Receiver" p:frequancy="33.3" p:receiverType="FM"/>
+	<bean id="receiver2" class="com.awe.beans.Receiver" autowire-candidate="false" p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="byType" p:radioName="ABC" p:range="999"/>
+	-->
+	<!--  	
+	<bean id="receiver" class="com.awe.beans.Receiver"  p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="constructor" p:radioName="ABC" p:range="999"/>	
+	-->
+	<!--  
+	<bean id="receiver1" class="com.awe.beans.Receiver" p:frequancy="33.3" p:receiverType="FM"/>
+	<bean id="receiver2" class="com.awe.beans.Receiver"  p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="constructor" p:radioName="ABC" p:range="999"/>
+	-->
+	<!-- 
+	<bean id="receiver1" class="com.awe.beans.Receiver" p:frequancy="33.3" p:receiverType="FM"/>
+	<bean id="receiver2" class="com.awe.beans.Receiver" autowire-candidate="false" p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="constructor" p:radioName="ABC" p:range="999"/>
+	 -->
+	 <!--
+	<bean id="receiver" class="com.awe.beans.Receiver" p:frequancy="33.3" p:receiverType="FM"/>
+	<bean id="receiver2" class="com.awe.beans.Receiver"  p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="constructor" p:radioName="ABC" p:range="999"/>
+	-->
+	
+	<!-- <bean id="tunner" class="com.awe.beans.Tunner" p:tunnerLevel="3" p:tunnerRange="333"/>
+	<bean id="receiver" class="com.awe.beans.Receiver"  p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="constructor" p:radioName="ABC" p:range="999"/>	
+	 -->
+	<!-- even though class contains zero/one/two argu and following line we only define one dependent as bean defination . instead of 
+		calling one arg constructor ioc will always call max arg counstructor 
+	    -->
+	<!-- <bean id="receiver" class="com.awe.beans.Receiver"  p:frequancy="99.3" p:receiverType="AM"/>
+	<bean id="radio" class="com.awe.beans.Radio" autowire="constructor" p:radioName="ABC" p:range="999"/>	
+	 -->
+	
+	<!-- 
+	<bean id="radio" class="com.awe.beans.Radio" autowire="constructor" p:radioName="ABC" p:range="999"/>
+	 -->
+</beans>
