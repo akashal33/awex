@@ -14,5 +14,12 @@ class test{
 	// priority bug fix done 
  
  }
+	
+	 public void m3(){
+ 
+	
+ 
+ }
+
 
 }
