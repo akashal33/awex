@@ -17,7 +17,7 @@ class test{
 	
 	 public void m3(){
  
-	
+	// bug fixed in feature branch 300
  
  }
 
