@@ -20,6 +20,10 @@ class test{
 	// bug fixed in feature branch 300
  
  }
+
+## some code 
+
 ## some code added after feature branch and commited before feature branch
+
 
 }
